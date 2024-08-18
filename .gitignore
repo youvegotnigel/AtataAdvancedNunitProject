@@ -1,0 +1,65 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Ignore Rider and VSCode specific files
+.idea/
+.vscode/
+
+# Ignore .NET project lock and package files
+project.lock.json
+project.fragment.lock.json
+project.json.lock
+global.json
+
+# Ignore package management directories
+packages/
+.vscode-test/
+
+# Ignore NuGet packages
+*.nupkg
+# Uncomment if you have a NuGet packages folder in the solution root
+# packages/
+
+# Ignore SpecFlow generated files
+**/*.feature.cs
+
+# Ignore Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Ignore Atata Framework logs
+Atata/
+Logs/
+
+# Ignore Selenium specific files (e.g., downloaded web drivers)
+Drivers/
+
+# Ignore local configuration files
+appsettings.*.json
+
+# Ignore publish directory
+publish/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Ignore log files
+*.log
+
+# Ignore Resharper files
+_ReSharper*/
+
+# Ignore Visual Studio files
+.vs/
