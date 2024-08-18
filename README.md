@@ -1,6 +1,6 @@
-# atata-spec-flow-poc
+# atata-nunit-advanced-poc
 
-Demonstrates how to use Atata Framework with SpecFlow
+Demonstrates how to use Atata Framework for Test Automation
 
 
 * [Atata GitHub](https://github.com/atata-framework/atata)
