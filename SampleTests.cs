@@ -3,13 +3,12 @@
     public sealed class SampleTests : UITestFixture
     {
         [Test]
-        public void SampleTest()
+        public void VerifyPageTitle()
         {
             Go.To<OrdinaryPage>()
                     .PageTitle.Should.Contain("Atata");
 
             AtataContext.Current.TakeScreenshot();
-
         }
 
     }
