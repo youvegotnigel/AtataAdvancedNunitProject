@@ -18,7 +18,7 @@
         [FindItemByLabel]
         public Button<_> SignIn { get; private set; }
 
-        public ValidationMessageList<_> ValidationMessages { get; private set; }
+        //public ValidationMessageList<_> ValidationMessages { get; private set; }
 
     }
 }
