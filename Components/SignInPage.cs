@@ -1,6 +1,6 @@
 ﻿namespace AtataAdvancedNunitProject.Components
 {
-
+    using AtataAdvancedNunitProject.Controls;
     using _ = SignInPage;
 
     [Url("signin")]
@@ -18,7 +18,7 @@
         [FindItemByLabel]
         public ButtonDelegate<UsersPage, _> SignIn { get; private set; }
 
-        //public ValidationMessageList<_> ValidationMessages { get; private set; }
+        public ValidationMessageList<_> ValidationMessages { get; private set; }
 
     }
 }
