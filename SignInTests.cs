@@ -6,11 +6,16 @@ namespace AtataAdvancedNunitProject
     public class SignInTests : UITestFixture
     {
         [Test]
-        public void SignIn() =>
+        public void SignIn()
+        {
             Login();
+            AtataContext.Current.TakeScreenshot();
+        }
+
 
         [Test]
-        public void Validation_Required() =>
+        public void Validation_Required()
+        {
             Go.To<SignInPage>()
                 .SignIn.Click()
                 .ValidationMessages[x => x.Email].Should.BeRequired()
@@ -19,10 +24,15 @@ namespace AtataAdvancedNunitProject
                 .Password.Set(Config.Account.Password)
                 .SignIn();
 
+            AtataContext.Current.TakeScreenshot();
+        }
+
+
 
 
         [Test]
-        public void Validation_InvalidPassword() =>
+        public void Validation_InvalidPassword()
+        {
             Go.To<SignInPage>()
                 .Email.Set(Config.Account.Email)
                 .Password.Set(Config.Account.Password + "!")
@@ -30,6 +40,10 @@ namespace AtataAdvancedNunitProject
                 .ValidationMessages.Should.Contain(TermMatch.Contains, "invalid")
                 .Password.Set(Config.Account.Password)
                 .SignIn();
+
+            AtataContext.Current.TakeScreenshot();
+        }
+
 
     }
 }
