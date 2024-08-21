@@ -7,6 +7,7 @@ Demonstrates how to use Atata Framework for Test Automation
 * [Atata Docs](https://atata.io/getting-started/)
 * [HTML Validations](https://github.com/atata-framework/atata-htmlvalidation)
 * [Atata Configuration](https://github.com/atata-framework/atata-configuration-json)
+* [Atata Bootstarp](https://www.nuget.org/packages/Atata.Bootstrap/)
 
 ### Nigel Mulholland
 
